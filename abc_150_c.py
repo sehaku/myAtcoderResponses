@@ -1,13 +1,3 @@
-'''
-1, 2, 3, 4, 5
-1, 2, 4, 3, 5
-1, 2, 4, 5, 3
-1, 2, 5, 3, 4
-1, 2, 5, 4, 3
-1, 3, 2, 4, 5
-'''
-
-
 def exclude(cs, s):
     return [x for i, x in enumerate(cs) if i not in s]
 
