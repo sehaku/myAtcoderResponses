@@ -1,3 +1,4 @@
+# 貪欲法
 N = int(input())
 money = 1000
 line = list(map(int, input().split()))
