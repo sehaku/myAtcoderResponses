@@ -1,0 +1,7 @@
+s = list(input())
+t = list(input())
+s.sort()
+t.sort(reverse=True)
+ans_s = "".join(map(str, s))
+ans_t = "".join(map(str, t))
+print("Yes" if ans_s < ans_t else "No")
