@@ -1,4 +1,5 @@
 import math
+
 N = int(input())
 isPrime = True
 if N == 1:
@@ -6,7 +7,7 @@ if N == 1:
 elif N == 2:
     isPrime = True
 else:
-    for i in range(2, math.floor(math.sqrt(N))+1):
+    for i in range(2, math.floor(math.sqrt(N)) + 1):
         if N % i == 0:
             isPrime = False
     if not isPrime:

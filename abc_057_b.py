@@ -1,6 +1,6 @@
 # manhattan distance |x1-x2|+|y1-y2|
 def list_add(l1, l2):
-    tmp = [abs(a-b) for a, b in zip(l1, l2)]
+    tmp = [abs(a - b) for a, b in zip(l1, l2)]
     return tmp
 
 

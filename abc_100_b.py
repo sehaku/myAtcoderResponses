@@ -14,5 +14,5 @@ elif list[0] == 2:
 if list[1] != 100:
     print(list[1] * fillzero)
 else:
-    print((list[1] * fillzero)+plus)
+    print((list[1] * fillzero) + plus)
 # max 2 100 -> 1000000 (intで表現可能)

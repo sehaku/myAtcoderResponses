@@ -1,4 +1,3 @@
-
 N = int(input())
 line = list(input())
 rw = {"R": [], "W": []}
@@ -30,5 +29,5 @@ for cnt, i in enumerate(line):
         else:
             rw["W"].append(cnt)
 ans = min(len(rw["R"]), len(rw["W"]))
-ans = min(ans, replace(len(rw["R"])-1))
+ans = min(ans, replace(len(rw["R"]) - 1))
 print(ans)

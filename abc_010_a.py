@@ -1,2 +1,2 @@
 S = input()
-print(S, "pp", sep='')
+print(S, "pp", sep="")

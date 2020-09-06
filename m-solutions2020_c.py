@@ -3,7 +3,7 @@ score = list(map(int, input().split()))
 for i in range(K, N):
     print("Yes" if score[i - K] < score[i] else "No")
 
-'''
+"""
 # 実直に計算する必要はなかった TLE
 from collections import deque
 
@@ -21,4 +21,4 @@ for num, val in enumerate(add):
     if num != 0:
         print("Yes" if val > pre else "No")
     pre = val
-'''
+"""

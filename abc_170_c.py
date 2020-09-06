@@ -9,7 +9,7 @@ while abs(right - left) > 1:
         right = middle
     else:
         left = middle
-#print(notLine[left], notLine[right])
+# print(notLine[left], notLine[right])
 if X - notLine[left] <= notLine[right] - X:
     print(notLine[left])
 else:

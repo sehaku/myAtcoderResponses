@@ -7,7 +7,7 @@ for i in seq:
     numbers[i + 1] += 1
 print(max(numbers))
 
-'''
+"""
 # method of using collections most_common
 import copy
 import collections
@@ -17,4 +17,4 @@ seqP1 = [i + 1 for i in copy.copy(seq)]
 seqM1 = [i - 1 for i in copy.copy(seq)]
 mixed = seq + seqM1 + seqP1
 print(mixed.count(collections.Counter(mixed).most_common()[0][0]))
-'''
+"""

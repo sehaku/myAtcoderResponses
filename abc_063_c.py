@@ -11,4 +11,4 @@ if sum(questions) % 10 != 0:
 elif len(notTenLine) == 0:
     print(0)
 else:
-    print(sum(questions)-min(notTenLine))
+    print(sum(questions) - min(notTenLine))

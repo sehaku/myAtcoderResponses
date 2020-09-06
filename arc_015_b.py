@@ -14,4 +14,4 @@ for i in range(N):
         dayType[4] += 1
     if query[0] < 0:
         dayType[5] += 1
-print(' '.join(map(str, dayType)))
+print(" ".join(map(str, dayType)))

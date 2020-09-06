@@ -1,13 +1,14 @@
 # sqrt(n) <= 10**6 O(√n)ループに耐えうる
 # // -> (python 3) 除算の結果をintに
 import math
+
 N = int(input())
 PrimeFactList = []
 tmpNum = N
 
 # 素因数分解
 # 2 から順に数字を+1しながら√N + 1まで素因数分解すれば素数以外では素因数分解されない
-for i in range(2, int(math.sqrt(N))+1):
+for i in range(2, int(math.sqrt(N)) + 1):
     if N % i == 0:
         expcnt = 0
         while tmpNum % i == 0:

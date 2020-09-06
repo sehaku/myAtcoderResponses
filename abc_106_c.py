@@ -2,9 +2,9 @@
 S = list(input())
 K = int(input())
 for i in range(len(S)):
-    if S[i] != '1':
+    if S[i] != "1":
         print(S[i])
         exit()
     elif i == K - 1:
-        print('1')
+        print("1")
         exit()

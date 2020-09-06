@@ -7,7 +7,7 @@ for i in range(1, N):
         maxCommon = commonNum
 
 print(maxCommon)
-'''
+"""
 # C-like answer
 N = int(input())
 S = list(input())
@@ -28,4 +28,4 @@ for i in range(1, N):
     if maxCommon < count:
         maxCommon = count
 print(maxCommon)
-'''
+"""

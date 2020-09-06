@@ -9,7 +9,9 @@ for i in range(H):
         if canvas[i][j] == "#":
             canDraw = False
             for k in direction:
-                if (i - k[0] >= 0 and i - k[0] < H) and (j - k[1] >= 0 and j - k[1] < W):
+                if (i - k[0] >= 0 and i - k[0] < H) and (
+                    j - k[1] >= 0 and j - k[1] < W
+                ):
                     if canvas[i - k[0]][j - k[1]] == "#":
                         canDraw = True
                         break

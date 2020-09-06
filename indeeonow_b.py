@@ -1,5 +1,5 @@
 n = int(input())
-indeed = list('indeednow')
+indeed = list("indeednow")
 indeed.sort()
 ans = []
 for i in range(n):

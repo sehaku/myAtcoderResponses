@@ -10,7 +10,9 @@ for i in numbers:
         even_num_cnt += 1
     else:
         odd_num_cnt += 1
-if four_mal_cnt >= odd_num_cnt or (four_mal_cnt == odd_num_cnt - 1 and even_num_cnt == 0):
+if four_mal_cnt >= odd_num_cnt or (
+    four_mal_cnt == odd_num_cnt - 1 and even_num_cnt == 0
+):
     print("Yes")
 else:
     print("No")

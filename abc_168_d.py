@@ -1,6 +1,7 @@
 import queue
+
 q = queue.Queue()
-bool = True
+flag = True
 
 
 def bfs():
@@ -13,7 +14,6 @@ def bfs():
             dist[i] = dist[now] + 1
             q.put(i)
             ans[i] = now
-    bool = False
 
 
 N, M = map(int, input().split())
@@ -27,9 +27,9 @@ for i in range(M):
 dist = [-1] * N
 ans = [-1] * N
 bfs()
-if bool:
+if flag:
     print("Yes")
     for i in range(1, N):
-        print(ans[i]+1)
+        print(ans[i] + 1)
 else:
     print("No")

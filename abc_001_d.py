@@ -1,8 +1,9 @@
 import math
+
 list = [0] * 290
 N = int(input())
 for i in range(N):  # O(7n)
-    tmp = [int(i) for i in input().split('-')]
+    tmp = [int(i) for i in input().split("-")]
     tmp[0] = tmp[0] - (tmp[0] % 5)
     if tmp[1] % 5 != 0:
         tmp[1] = tmp[1] + 5 - (tmp[1] % 5)
@@ -20,7 +21,7 @@ for i in range(len(list)):
         flag = False
         # 1ごとに5増加
         # 12ごとに100増加,60減少
-        num = math.floor(i/12) * 100 + (i % 12)*5
+        num = math.floor(i / 12) * 100 + (i % 12) * 5
         str = "{0:04d}".format(num)
     if not flag and sum == 0:
         flag = True

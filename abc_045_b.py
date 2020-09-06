@@ -5,8 +5,8 @@ for i in range(3):
 turn = 0
 while True:
     if len(S[turn]) == 0:
-        print(chr(ord('A')+turn))
+        print(chr(ord("A") + turn))
         break
-    next = ord(S[turn][0]) - ord('a')
+    next = ord(S[turn][0]) - ord("a")
     del S[turn][0]
     turn = next

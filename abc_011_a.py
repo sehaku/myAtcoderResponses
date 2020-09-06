@@ -1,2 +1,2 @@
 N = int(input())
-print(N % 12+1)
+print(N % 12 + 1)

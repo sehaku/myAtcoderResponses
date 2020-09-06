@@ -8,10 +8,14 @@ for i in range(N):
     s = steps[i]
     left_idx = chars.index(s[0])
     right_idx = chars.index(s[1])
-    if (nums[left_idx] == 0 and nums[right_idx] == 0) or nums[left_idx] < 0 or nums[right_idx] < 0:
+    if (
+        (nums[left_idx] == 0 and nums[right_idx] == 0)
+        or nums[left_idx] < 0
+        or nums[right_idx] < 0
+    ):
         can_select = False
         break
-    elif nums[left_idx] == 1 and nums[right_idx] == 1 and i != N-1:
+    elif nums[left_idx] == 1 and nums[right_idx] == 1 and i != N - 1:
         if chars[left_idx] in list(steps[i + 1]):
             nums[left_idx] += 1
             nums[right_idx] -= 1

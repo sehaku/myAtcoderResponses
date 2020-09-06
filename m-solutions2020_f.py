@@ -1,6 +1,7 @@
 # from #15490827
 import bisect
 
+
 def solve(deg1, deg2, lis, magnification):
     tmpAns = 10 ** 10
     for dx in lis[deg1].keys():
@@ -11,6 +12,7 @@ def solve(deg1, deg2, lis, magnification):
             if t < len(lis[deg2][dx]):
                 tmpAns = min(tmpAns, (lis[deg2][dx][t] - dy) * magnification)
     return tmpAns
+
 
 N = int(input())
 fTof = {"U": {}, "D": {}, "R": {}, "L": {}}
@@ -30,7 +32,7 @@ for _ in range(N):
             fTof[u][y].append(x)
         else:
             fTof[u][y] = [x]
-    if x+y in urld[u]:
+    if x + y in urld[u]:
         urld[u][x + y].append(y)
     else:
         urld[u][x + y] = [y]
@@ -48,17 +50,17 @@ for i in urld:
 for i in ulrd:
     for j in ulrd[i]:
         ulrd[i][j].sort()
-ans = 10**10
+ans = 10 ** 10
 ans = min(ans, solve("R", "L", fTof, 5))
 ans = min(ans, solve("U", "D", fTof, 5))
 ans = min(ans, solve("U", "R", urld, 10))
 ans = min(ans, solve("L", "D", urld, 10))
 ans = min(ans, solve("U", "L", ulrd, 10))
 ans = min(ans, solve("R", "D", ulrd, 10))
-print("SAFE" if ans == 10**10 else ans)
+print("SAFE" if ans == 10 ** 10 else ans)
 
 
-'''
+"""
 # TLE
 from collections import deque
 
@@ -131,4 +133,4 @@ if ans == sideLen * 100:
     print("SAFE")
 else:
     print(ans)
-'''
+"""

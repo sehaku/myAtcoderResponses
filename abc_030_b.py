@@ -1,5 +1,5 @@
 n, m = map(int, input().split())
-dirMax = ((n % 12) + (m / 60))
+dirMax = (n % 12) + (m / 60)
 dirMin = m / 5
 
 if dirMax < dirMin:
@@ -7,4 +7,4 @@ if dirMax < dirMin:
 
 direct = dirMax - dirMin
 indirect = (dirMin + 12) - dirMax
-print(min(direct, indirect)*30)
+print(min(direct, indirect) * 30)

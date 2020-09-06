@@ -18,7 +18,7 @@ def canReplace(i, remain):
             charList.append(ans[j])
             cntList.append(1)
     # 初期位置と異なるならremainを減らしていく
-    for j in S[i + 1:]:
+    for j in S[i + 1 :]:
         try:
             idx = charList.index(j)
             if cntList[idx] <= 0:
@@ -44,4 +44,4 @@ for i in range(N - 1):
             K = remain
             break
         ans[i], ans[j] = ans[j], ans[i]  # 不可能なら戻す
-print(''.join(ans))
+print("".join(ans))

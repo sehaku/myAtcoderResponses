@@ -1,4 +1,4 @@
-buttonType = ['x', 'o', '.']
+buttonType = ["x", "o", "."]
 N = int(input())
 line = [list(input()) for _ in range(N)]
 buttonTapCnt = 0
@@ -8,7 +8,13 @@ for j in range(9):
         curChar = line[i][j]
         if curChar not in buttonType:
             print(
-                "Unexpected Input Char Error at: line[" + str(i) + "][" + str(j) + "] = "+line[i][j])
+                "Unexpected Input Char Error at: line["
+                + str(i)
+                + "]["
+                + str(j)
+                + "] = "
+                + line[i][j]
+            )
             exit()
         else:
             if curChar == buttonType[1]:

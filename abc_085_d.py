@@ -1,4 +1,5 @@
 import math
+
 N, H = map(int, input().split())
 swing = []
 throw = []
@@ -23,7 +24,7 @@ else:
             exit()
     print(math.ceil(cnt + (H - damage_sum) / swing[0]))
 
-'''
+"""
 # using bisect ver. method
 import bisect
 import math
@@ -52,4 +53,4 @@ else:
             print(cnt)
             exit()
     print(math.ceil(cnt + (H - damage_sum) / swing[0]))
-'''
+"""

@@ -1,10 +1,10 @@
 N, a = map(int, input().split())
 k = int(input())
 dictionary = [int(i) for i in input().split()]
-steps = [0] * (2*N)
+steps = [0] * (2 * N)
 steps[0] = a
-for i in range(1, 2*N):
-    steps[i] = dictionary[steps[i-1] - 1]
+for i in range(1, 2 * N):
+    steps[i] = dictionary[steps[i - 1] - 1]
 if k <= N:
     print(steps[k])
 else:

@@ -12,6 +12,6 @@ for i in range(len(s)):
             for k in range(len(s[i])):
                 if s[i][k] != ngwords[j][k] and ngwords[j][k] != "*":
                     break
-                if k == len(s[i])-1:
+                if k == len(s[i]) - 1:
                     s[i] = "*" * len(s[i])
-print(' '.join(s))
+print(" ".join(s))
